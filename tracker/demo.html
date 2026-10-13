@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo Store</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #fafafa; color: #222; }
+    header { background: #1d3557; color: #fff; padding: 20px 40px; display: flex; justify-content: space-between; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; }
+    main { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 16px; }
+    button { background: #e63946; color: #fff; border: 0; padding: 10px 16px; border-radius: 6px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Demo Store</strong>
+    <nav><a href="#">Home</a><a href="#">Shop</a><a href="#">Cart</a></nav>
+  </header>
+  <main>
+    <h1>Summer sale</h1>
+    <p>Click around this page. Every click is tracked and shows up on the dashboard.</p>
+    <div class="grid">
+      <div class="card"><h3>Sneakers</h3><p>Rs 2,499</p><button>Add to cart</button></div>
+      <div class="card"><h3>Backpack</h3><p>Rs 1,299</p><button>Add to cart</button></div>
+      <div class="card"><h3>Headphones</h3><p>Rs 3,999</p><button>Add to cart</button></div>
+      <div class="card"><h3>Watch</h3><p>Rs 5,499</p><button>Add to cart</button></div>
+    </div>
+  </main>
+  <script src="tracker.js" data-api="http://localhost:5000"></script>
+</body>
+</html>

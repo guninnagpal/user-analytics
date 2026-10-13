@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f4f5f7; color: #1f2933; }
+.topbar { display: flex; align-items: center; justify-content: space-between; padding: 14px 28px; background: #fff; border-bottom: 1px solid #dde1e6; }
+.topbar h1 { font-size: 18px; margin: 0; }
+nav button { border: 0; background: none; padding: 8px 14px; font-size: 14px; cursor: pointer; border-radius: 6px; color: #52606d; }
+nav button.active { background: #1d3557; color: #fff; }
+main { padding: 24px 28px; max-width: 1200px; margin: 0 auto; }
+h2 { font-size: 15px; margin: 0 0 12px; }
+.two-col { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; align-items: start; }
+@media (max-width: 800px) { .two-col { grid-template-columns: 1fr; } }
+section { background: #fff; border: 1px solid #dde1e6; border-radius: 8px; padding: 16px; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #eef0f2; }
+tbody tr { cursor: pointer; }
+tbody tr:hover, tr.selected { background: #eef3fb; }
+.mono { font-family: ui-monospace, Menlo, monospace; }
+.small { font-size: 12px; }
+.muted { color: #7b8794; }
+.error { color: #c0392b; }
+.journey { list-style: none; margin: 0; padding: 0; }
+.journey li { display: flex; gap: 12px; padding: 10px 0; border-bottom: 1px solid #eef0f2; align-items: flex-start; }
+.tag { font-size: 12px; padding: 2px 8px; border-radius: 10px; white-space: nowrap; }
+.tag.page_view { background: #dbeafe; color: #1e40af; }
+.tag.click { background: #fee2e2; color: #b91c1c; }
+.toolbar { display: flex; gap: 16px; align-items: center; margin-bottom: 14px; }
+select { padding: 6px 8px; font-size: 14px; }
+.heatmap { position: relative; width: 100%; max-width: 900px; background-color: #fff; border: 1px solid #dde1e6; border-radius: 8px; overflow: hidden;
+  background-image: linear-gradient(#eef0f2 1px, transparent 1px), linear-gradient(90deg, #eef0f2 1px, transparent 1px); background-size: 5% 5%; }
+.dot { position: absolute; width: 22px; height: 22px; margin: -11px 0 0 -11px; border-radius: 50%; background: radial-gradient(circle, rgba(230,57,70,.55), rgba(230,57,70,0) 70%); }
+.empty { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; }
